@@ -1,0 +1,30 @@
+
+.navigation{
+    width: 100%;
+    font-size: 12px;
+}
+.navigation ul{
+    list-style-type: none;
+}
+.nav_image img{
+    width:10%;
+    height:10%;
+}
+.nav_middle{
+    display: flex;
+    justify-content: center;
+}
+.nav_middle li{
+        margin:-5% 14px;
+}
+.nav_login{
+    display: flex;
+    justify-content: right;
+}
+.nav_login li{
+    margin: -5% 18px;
+}
+.nav_login_ImageIcon img{
+    width:10%;
+    height:10%;
+}
