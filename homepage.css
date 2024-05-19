@@ -28,3 +28,17 @@
     width:10%;
     height:10%;
 }
+.button_photo{
+    border:none;
+    background-color: transparent;
+}
+.lead_sentence{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    font-size:  40px;
+    margin-left: 5px;
+    color: aliceblue;
+
+    
+}
