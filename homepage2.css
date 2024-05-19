@@ -1,0 +1,47 @@
+/*homepage*/
+body{
+    background-color:#EBEFEA ;
+}
+.landing_photo{
+    display: flex; 
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+ }
+ .photo_device{
+     background-color: transparent;
+ }
+ .photo_Monitor{
+     background-color: transparent;
+ }
+ .photo_frame{
+     background-color: transparent;
+ }
+ .photo_Electricity{
+     background-color: transparent;
+ }
+ .landing_text ul{
+    list-style-type: none;
+    display: flex; 
+    justify-content: space-evenly;
+    height: 100vh;
+    align-items: center;
+
+ }
+ .landing_text_list{
+    margin-top: -750px;
+ }
+.Electronics{
+    margin-left: -80px;
+}
+.interfaces{
+    margin-left:-55px;
+}
+.connection{
+    margin-left:-5px;
+}
+.systems{
+    margin-left:-30px;
+}
+
+

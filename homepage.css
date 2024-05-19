@@ -1,4 +1,4 @@
-
+/*coverpage*/
 .navigation{
     width: 100%;
     font-size: 12px;
@@ -10,6 +10,15 @@
     width:10%;
     height:10%;
 }
+.nav_login_ImageIconL{
+    width: 25%;
+    height:25%;
+}
+.nav_login_ImageIconR{
+    width: 30%;
+    height:30%;
+}
+
 .nav_middle{
     display: flex;
     justify-content: center;
@@ -58,4 +67,3 @@ body::before {
     font-size: 20px;
     margin: -40px auto auto 70px;
 }
-
