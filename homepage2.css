@@ -1,6 +1,7 @@
 /*homepage*/
-body{
+#landing_page{
     background-color:#EBEFEA ;
+    height: 50%;
 }
 .landing_photo{
     display: flex; 
@@ -43,5 +44,26 @@ body{
 .systems{
     margin-left:-30px;
 }
+#company_news1_page{
+    background-color:#F5F5F5 ;
+    height: 100vh;
+}
+.news_text{
+    font-size: 50px;
+    padding-top: 100px;
+}
+.news_guide{
+    margin-top: 100px;
 
+}
+.news_guide{
+    display: flex;
+    flex-direction: column;
+    margin-left: 700px;
+}
+.news_guide li{
+    list-style-type: none;
+    font-size: 15px;
+    margin: 5px;
+}
 
