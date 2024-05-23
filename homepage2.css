@@ -44,6 +44,7 @@
 .systems{
     margin-left:-30px;
 }
+/*advertisement1*/
 #company_news1_page{
     background-color:#F5F5F5 ;
     height: 100vh;
@@ -88,10 +89,30 @@
     border: none;
     border-radius: 3%;
 }
+/*advertisement2*/
 #direct_ordering_page{
-    background-color:#F5F5F5 ;
+    background-color:#EBEFEA ;
     height: 100vh;
 }
-
-
+.photo--clicking{
+    width: 40%;
+    margin-left:135px;
+    margin-top: 130px;
+}
+.More_button{
+    font-size: 23px;
+    font-family: "Roboto";
+    margin-left: 930px;
+    margin-top: 55px;
+    background-color:#008A00;
+    color: white;
+    padding: 5px 35px;
+    border: none;
+    border-radius: 3%;
+}
+/*product showing page*/
+.top_category{
+    text-align: center;
+    font-size: 30px;
+}
 
