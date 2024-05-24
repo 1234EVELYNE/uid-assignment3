@@ -52,7 +52,7 @@
 .news_text{
     font-size: 25px;
     padding-top: 100px;
-    margin-left: 100px;
+    margin: -15px 100px;
 }
 .Benefits{
     width: 40%;
@@ -157,5 +157,47 @@
     width: 16%;
     margin:auto 30px;
 }
+/*A high-performance all-rounder*/
+#high-performance_advertisement{
+    background-color:#EBEFEA ;
+    height: 100vh;
+}
+.high_performance_text{
+    margin:-3px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.A_high-performance_all-rounder{
+    margin-top: 170px;
+    margin-left: 910px;
+}
+.content{
+    margin-top: -60px;
+}
+.photo_high_click{
+    width: 40%;
+    margin-left:135px;
+    margin-top: -50px;
+}
+.performance_text{
+    margin-left: 930px;
+    margin-top: -330px;
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 2;
+}
+
+.More_button2{
+    font-size: 23px;
+    font-family: "Roboto";
+    margin-left: 930px;
+    margin-top: 90px;
+    background-color:#008A00;
+    color: white;
+    padding: 5px 35px;
+    border: none;
+    border-radius: 3%;
+}
+
 
 
