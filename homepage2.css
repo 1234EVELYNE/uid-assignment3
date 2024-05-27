@@ -1,3 +1,78 @@
+/*coverpage*/
+.navigation{
+    width: 100%;
+    font-size: 12px;
+    height: 100vh;
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav_image{
+    padding-left: 5px;
+}
+.nav_image img{
+    width:10%;
+    height:10%;
+}
+.nav_login_ImageIconL{
+    width: 25%;
+    height:25%;
+}
+.nav_login_ImageIconR{
+    width: 30%;
+    height:30%;
+}
+
+.nav_middle{
+    display: flex;
+    justify-content: center;
+}
+.nav_middle li{
+        margin:-5% 14px;
+}
+.nav_login{
+    display: flex;
+    justify-content: right;
+}
+.nav_login li{
+    margin: -5% 18px;
+}
+.nav_login_ImageIcon img{
+    width:10%;
+    height:10%;
+}
+.button_photo{
+    border:none;
+    background-color: transparent;
+}
+.lead_sentence{
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    font-size:  40px;
+    margin-left: 5px;
+    color: rgba(255,255,255,1);  
+}
+body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('photo/image.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: -10px;
+        opacity: 0.7;
+        z-index: -1;
+}
+.button_textSee{
+    font-size: 20px;
+    margin: -40px auto auto 70px;
+}
 /*homepage*/
 #landing_page{
     background-color:#EBEFEA ;
@@ -303,23 +378,47 @@
         list-style-type: none;
         display: flex; 
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         white-space: normal;
+        font-family: "Roboto";
+        font-weight: bolder;
     
      }
      .landing_photo{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 50px;
      }
      .landing_text_list{
         margin-top: -750px;
-        font-size: 10px;
+        font-size: 15px;
         white-space: normal;
      }
      .interfaces{
-        padding-left: 20px;
+        position: absolute;
+        padding-left: 70px;
+        padding-bottom:260px ;
+        font-size: 20px;
      }
-    
+     .connection{
+        position: absolute;
+        padding-right: 30px;
+        padding-top:160px ;
+        font-size: 20px;
+     }
+     .Electronics{
+        padding-bottom: 450px;
+        padding-left: 85px;
+        font-size: 20px;
+     }
+     .systems{
+        padding-left: 55px;
+        font-size: 20px;
+     }
+     .photo_Electricity{
+        padding-left: 10px;
+
+     }
 }
 
 
