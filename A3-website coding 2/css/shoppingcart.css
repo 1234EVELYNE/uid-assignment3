@@ -1,0 +1,141 @@
+.content {
+  padding: 5%;
+  box-sizing: border-box;
+}
+
+.step-progress span {
+  font-size: 16px;
+}
+
+
+/* the step process with the current page for payment underline */ 
+.step-progress span:first-child{
+  text-decoration: underline;
+  color: #1d1f1d;
+}
+
+/* remove button style */
+.remove{
+  text-decoration: underline;
+  color: #008a00;
+}
+
+.text p{
+  width: 90%;
+  font-weight: 700;
+}
+
+
+.titlename {
+  font-size: 32px;
+  color:#1d1f1d;
+  font-weight: 600;
+}
+
+.list {
+  width: 100%;
+}
+
+.header {
+
+  width: 100%;
+  height: 50px;
+}
+
+.cart-list {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.header, .cart-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: #e5e5e5 1px solid;
+}
+
+.product, .price, .Quantity, .Total{
+  box-sizing: border-box;
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.Total{
+  width: 15%;
+  min-width: 70px;
+}
+
+.product img {
+  max-height: 120px;
+  min-width: 67px;
+
+}
+.Quantity .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid #008a00;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.describe {
+  width: 30%;
+  min-width: 220px;
+
+}
+
+/* set the order summary border line and style */
+.Summary,.Subtotal,.Shipping,.optional,.Totalb,.Including,.Check-out{
+  height: 80px;
+  border-bottom:  #e5e5e5 1px solid;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+/* remove the check out border-bottom line */
+.Check-out{
+  border-bottom: none;
+  justify-content: flex-end;
+}
+
+.Summary{
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 80px;
+}
+.Subtotal,.Shipping,.Including,.Totalb{
+  justify-content: space-between;
+}
+
+.Check-out .button{
+  width: 184px;
+  height: 44px;
+  background-color: #008a00;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+
+}
+/* mobile screen */
+@media all and (max-width: 1000px) {
+  .cart-list {
+    /* height: 120px; */
+    flex-wrap: wrap;
+  }
+  .price{
+    display: none;
+  }
+  .header {
+    
+    display: none;
+  }
+}

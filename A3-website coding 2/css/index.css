@@ -1,0 +1,251 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    color: #1d1f1d;
+}
+
+.bigimg {
+    width: 100%;
+    position: relative;
+    top: -80px;
+    margin-bottom: -80px;
+    z-index: -1;
+    text-align: center;
+    overflow: hidden;
+}
+.productlistbutton{
+    position: absolute;
+    bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+.productlistbutton .button{
+    width: 48px;
+    height: 48px;
+    background-color: #008a00;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    transform: rotate(90deg);
+}
+.productlistbutton .see-products{
+    color: #ffffff;
+    font-size: 20px;
+
+}
+.large-text{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+a{
+    text-decoration: none;
+
+}
+.productlistbutton.text{
+    color: #ffffff;
+}
+
+
+/* hover shadow with 2D or 3D transition effect that makes elements magnify 1.05x on mouseover */
+.content img:hover{
+    box-shadow: 4px 8px 20px #b5b5b5;
+    transform: scale(1.05);
+}
+/* Alternate colors for each section by using odd ad even number of part */
+.flow-list:nth-child(even){
+    background-color: #ffffff;
+    padding: 80px;
+}
+
+.flow-list:nth-child(odd){
+    background-color:#EBEFEA;;
+    padding: 80px;
+}
+
+
+/* mobile screen*/
+@media all and (max-width: 1000px) {
+    .bigtext{
+        color: #ffffff;
+        font-size: 50px;
+        position: absolute;
+        left: 20px;
+        top: 400px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 360px;
+    }
+
+    .bigimg img {
+        position: relative;
+        height: 100vh;
+        left: -400px;
+    }
+
+    .icon-list {
+        width: 100%;
+        background-color: #ebefea;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    .icon-list img {
+        height: 40px;
+        width: 40px;
+    }
+    .flow-list{
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .flow-list .content img{
+        width: 80%;
+    }
+    .text .button{
+        height: 48px;
+        width: 170px;
+        background-color: #008a00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 5px;
+    }
+    .Category .content img{
+        width: 188px;
+        height: 258px;
+        border-radius: 20px;
+        transition: all 0.25s;/* The shadow effect will appear smoothly on mouse hover, with a delay of 0.25s */
+
+    }
+   
+  
+}
+
+/* desktop screen */
+@media all and (min-width: 1000px) {
+    .bigtext{
+        color: #ffffff;
+        font-size: 72px;
+        position: absolute;
+        left: 20px;
+        top: 400px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 560px;
+    
+    }
+    .icon-list-item{
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .icon-list-item img{
+        height: 90px;
+        width: 90px;
+    }
+    .icon-list-item div{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    .icon-list-item p{
+        font-size: 36px;
+        text-align: center;
+    }
+    .bigimg img {
+        width: 100%;
+    }
+
+    .icon-list {
+        width: 100%;
+        padding: 40px 20px;
+        background-color: #ebefea;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+
+    .flow-list {
+        width: 100%;
+        padding: 30px ;
+        box-sizing: border-box;
+    }
+    
+    .flow-list .content {
+        width: 100%;
+        display: flex;
+        
+    }
+    
+    .flow-list .content img {
+        width: 40%;
+        
+    }
+    
+    .flow-list .content .text {
+        padding-left: 30px;
+        width: 40%;
+
+    
+       
+
+    }
+    .text .button{
+        height: 48px;
+        width: 170px;
+        background-color: #008a00;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 800;
+        border-radius: 5px;
+    }
+    .Category .content img{
+        width: 250px;
+        border-radius: 20px;
+        transition: all 0.25s;/* The shadow effect will appear smoothly on mouse hover, with a delay of 0.25s */
+
+    }
+    
+}
+
+/* categories styling */
+.Category .Category-title{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.Category .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    
+}
+/* categories border and background style */
+.Category{
+    background-color: #f5f5f5;
+    padding-top: 40px;
+    padding-bottom: 100px;
+}
+
