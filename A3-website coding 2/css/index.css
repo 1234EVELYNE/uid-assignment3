@@ -104,9 +104,13 @@ a{
         width: 40px;
     }
     .flow-list{
-        padding: 30px;
+        padding:30px;
         box-sizing: border-box;
     }
+   .Your-benefit p{
+    position: absolute;
+    padding-top: 10px;
+   }
     .flow-list .content img{
         width: 80%;
     }
@@ -231,7 +235,7 @@ a{
 /* categories styling */
 .Category .Category-title{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 40px;
 }
 .Category .content{
@@ -245,7 +249,7 @@ a{
 /* categories border and background style */
 .Category{
     background-color: #f5f5f5;
-    padding-top: 40px;
-    padding-bottom: 100px;
+    padding-top: 10px;
+    padding-bottom: 40px;
 }
 

@@ -120,6 +120,7 @@ body {
     font-size: 12px;
 }
 
+
 /* desktop view style */
 @media all and (min-width: 1000px) {
 
@@ -262,7 +263,6 @@ body {
     .button {
         display: flex;
         align-items: center;
-
     }
 /* shopping cart icon in moblie screen */
     .button .san {
