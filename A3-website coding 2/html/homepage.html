@@ -116,7 +116,10 @@
       </div>
     <!-- mobile navigation with Click the “up” sign to expand the menu -->
     </nav>
-    <div class="navlist">
+    <div class="navlist" id="mobile_nav">
+      <div id="navigation_search_item" class="navitem">
+            <span>Search</span>
+        </div>
       <div class="navitem">
         <span>Electronics in the Control Cabinet</span>
         <img onclick="up(0)" class="up" src="../photo/nav/up.png" alt="">
@@ -271,8 +274,8 @@
      <!--adver1-->
  <div class="content">
       <img src="../photo/index/flow1.png" alt="">
-      <div class="text">
-          <ul class="news_guide">
+      <div class="text txt-ml2">
+          <ul class="news_guide m">
               <li>Real Time Pricing and Product Availability</li>
               <li>Access Data Sheets Quickly</li>
               <li>Create Project Lists</li>    
@@ -287,15 +290,15 @@
   <!--adver2-->
   <div class="flow-list">
     <h1 class="yours-benefits">Direct ordering</h1>
-    <div class="content">
+    <div class="content ct-ml">
       <img src="../photo/index/flow2.png" alt="">
-      <div class="text">
+      <div class="text txt-ml">
         <ul class="news_guide">
           <li>Order with only a few clicks - automatically fill your<br>cart and safe time</li>
           <li>Do you know which article numbers you want to<br>order or do you have a product list in CSV format?</li>
           <li>Then you can save time by using our direct order<br>option</li>
         </ul>
-        <a href="./shoppingcart.html">
+        <a class="ml" href="./shoppingcart.html">
           <button class="log-in-button">MORE</div>
         </a>
       </div>
@@ -327,46 +330,51 @@
   
   <!---->
 
-  <div class="flow-list" style="padding-top: 150px;" >
+  <div class="flow-list">
+    <div class="content">
+      <p class="main-title">A high-performance all-rounder </p>
+        <img class="main-img" src="../photo/index/flow3.png" alt="">
 
-    <div class="content">
-      <img src="../photo/index/flow3.png" alt="">
       <div class="text">
-        <p class="large-text">A high-performance all-rounder</p>
-        <p>The Vario-X Controller from Murrelektronik is a robust and reliable industrial PC for challenging production and manufacturing applications.</p>
-        <p style="margin-bottom: 60px;">Create Project Lists</p>
+        <p class="large-text main-title2">A high-performance all-rounder </p>
+        <p style="font-size: 18px; line-height: 2;">The Vario-X Controller from Murrelektronik is a robust and reliable industrial PC for challenging production and manufacturing applications.</p>
+        <p style="margin-bottom: 60px; font-size: 18px; line-height: 2;">Create Project Lists</p>
         <div class="button">MORE</div>
       </div>
     </div>
   </div>
   <div class="flow-list">
     <div class="content">
+      <p class="main-title">Achieve More Together </p>
+      <img class="main-img" src="../photo/index/flow4.png" alt="">
       <div class="text">
-        <p class="large-text">Achieve More Together </p>
-        <p>Murrelektronik becomes 60th member of Single Pair Ethernet System Alliance</p>
-        <p style="margin-bottom: 60px;">The Vario-X Controller from Murrelektronik is a robust and reliable industrial PC for challenging production and manufacturing applications.</p>
+          <p class="large-text main-title2">Achieve More Together </p>
+          <p class="achieve_litext">Murrelektronik becomes 60th member of Single Pair Ethernet<br> System Alliance</p>
+          <p class="introduce-text">The Vario-X Controller from Murrelektronik is a robust and<br>reliable industrial PC for challenging production and<br> manufacturing applications.</p>
         <div class="button">MORE</div>
       </div>
-      <img src="../photo/index/flow4.png" alt="">
     </div>
   </div>
   <div class="flow-list">
     <div class="content">
-      <img src="../photo/index/flow5.png" alt="">
+      <p class="main-title">Ihre Vorteile im Murrelektronik Onlineshop</p>
+      <img class="main-img" src="../photo/index/flow5.png" alt="">
       <div class="text">
-        <p class="large-text">Ihre Vorteile im Murrelektronik Onlineshop</p>
-        <p style="margin-bottom: 60px;">The Vario-X Controller from Murrelektronik is a robust and reliable industrial PC for challenging production and manufacturing applications.</p>
+        <p class="large-text main-title2">Ihre Vorteile im Murrelektronik Onlineshop</p>
+        <p class="Ihre_text" style="margin-bottom: 60px;">The Vario-X Controller from Murrelektronik is a robust and reliable industrial PC for challenging production and manufacturing applications.</p>
         <div class="button">MORE</div>
       </div>
     </div>
   </div>
-  <div class="Category">
-    <h1 class="Category-title">Discover Our Electronics</h1>
+  <div class="Category2">
+    <h1 class="Discover">Discover Our Electronics</h1>
     <div class="content">
-      <img src="../photo/index/discover.png" alt="">
-      <img src="../photo/index/discover2.png" alt="">
-      <img src="../photo/index/discover3.png" alt="">
-      <img src="../photo/index/Category1.png" alt="">
+      <div class="Discover-photo">
+        <img src="../../Uid A3/uid3/photo/arrival.png" alt="power supply67">
+        <img src="../../Uid A3/uid3/photo/arrvial_img2.png"alt="Metal cube67">
+        <img src="../../Uid A3/uid3/photo/arrvial_img3.png" alt="connectors">
+        <img src="../../Uid A3/uid3/photo/arrvial_img4.png" alt="wires">
+      </div>
     </div>
   </div>
   <!-- footer for whole website-->
@@ -422,7 +430,59 @@
   <footer>
     <p>&copy; 2024 Murrelektronik. All rights reserved.</p>
   </footer>
-
+  <div id="navigation_search" class="navigation-mobile">
+    <img id="navigation_search_close" src="../../Uid A3/uid3/photo/close.png" class="modal-close-icon" />
+    <h2>Search</h2>
+    <div class="navigation-search-input-wrapper">
+        <img src="../../Uid A3/uid3/photo/search.png">
+        <input placeholder="Search" />
+    </div>
+    <div class="recently-viewed">
+        <div class="recently-viewed-top">
+            <h4>Recently Viewed</h4>
+            <a href="#">Clear History</a>
+        </div>
+        <img src="../../Uid A3/uid3/photo/top category phase.png">
+    </div>
+    <div>
+        <h4>Try to search</h4>
+        <div class="try-to-search">
+            <div class="try-to-search-item">
+                <img src="../../Uid A3/uid3/photo/search.png">
+                <span>Switches</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="../../Uid A3/uid3/photo/search.png">
+                <span>Control Devices</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="../../Uid A3/uid3/photo/search.png">
+                <span>Tool</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="../../Uid A3/uid3/photo/search.png">
+                <span>Transformers</span>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+<script>
+  // document.getElementById("menu").addEventListener("click", function() {
+  //   document.getElementById("navigation_mobile").style.display = "block";
+  // })
 
+  // document.getElementById("navigation_mobile_close").addEventListener("click", function() {
+  //   document.getElementById("navigation_mobile").style.display = "none";
+  // })
+
+  document.getElementById("navigation_search_item").addEventListener("click", function() {
+    document.getElementById("navigation_search").style.display = "block";
+  })
+
+  document.getElementById("navigation_search_close").addEventListener("click", function() {
+    document.getElementById("navigation_search").style.display = "none";
+  })
+
+</script>
 </html>

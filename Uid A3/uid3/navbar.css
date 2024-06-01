@@ -1,0 +1,28 @@
+/* navigation list and item in mobile screen */
+.navlist {
+    display: none;/* hidden by default  */
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.navlist .navitem {
+    
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 20px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #1D1F1D;
+}
+
+.navlist .navitem img {
+    height: 18px;
+    width: 18px;
+}
+
+.navitemlist {
+    display: none;
+    padding: 20px;
+    background-color: #ffffff;
+}

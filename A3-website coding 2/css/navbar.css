@@ -119,8 +119,18 @@ body {
 .tryto span {
     font-size: 12px;
 }
-
-
+    /* search */
+    .navigation-mobile {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        padding: 20px;
+        box-sizing: border-box;
+    }
 /* desktop view style */
 @media all and (min-width: 1000px) {
 
@@ -212,6 +222,9 @@ body {
     .smallScreen, .navlist {
         display: none;
     }
+    .navlist.mobile_show{
+        display: none;
+    }
 
 }
 
@@ -266,6 +279,7 @@ body {
     }
 /* shopping cart icon in moblie screen */
     .button .san {
+        top:13px;
         right: 60px;
         width: 40px;
         height: 40px;
@@ -289,11 +303,57 @@ body {
         height: 20px;
         color: #f5f5f5;
     }
+
+.modal-close-icon {
+    width: 20px;
+    float: right;
+}
+.navigation-search-input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 2px solid #4A8845;
+    border-radius: 10px;
+    padding: 6px 10px;
+}
+
+.navigation-search-input-wrapper img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.navigation-search-input-wrapper input {
+   flex: 1;
+    border: none;
+    outline: none;
+}
+
+.recently-viewed-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.try-to-search-item {
+    display: flex;
+    align-items: center;
+}
+
+.try-to-search-item img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.recently-viewed img {
+    width: 50%;
+}
 /* navigation list and item in mobile screen */
     .navlist {
         display: none;/* hidden by default  */
         background-color: #ffffff;
         z-index: 10;
+    }
+    .navlist.mobile_show{
+        display: block;
     }
 
     .navlist .navitem {
@@ -304,7 +364,11 @@ body {
         justify-content: space-between;
         margin: 0 20px;
         box-sizing: border-box;
-        border-bottom: 2px solid #1D1F1D;
+        /* padding: 18px 0; */
+        border-top: 1px solid #000;
+        color: #008A00;
+        font-weight: bold;
+
     }
 
     .navlist .navitem img {

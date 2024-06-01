@@ -39,10 +39,31 @@ body, html {
     font-size: 20px;
 
 }
+
 .large-text{
+
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 20px;
+}
+.main-title2{
+    display: block;
+}
+.main-title{
+    display: none;
+}
+@media (max-width:800px) {
+
+    .main-title{
+        font-size: 40px;
+        font-weight: 700;
+        display: block;
+    }
+    .main-title2{
+        display: none;
+    }
+
+
 }
 
 
@@ -251,5 +272,10 @@ a{
     background-color: #f5f5f5;
     padding-top: 10px;
     padding-bottom: 40px;
+}
+.Category2{
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 600px;
 }
 

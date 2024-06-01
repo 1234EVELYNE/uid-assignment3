@@ -1,7 +1,7 @@
 // Mobile navigation expansion
 function navspread(n) {
     if (n == 1) {
-        document.getElementsByClassName('navlist')[0].style.display = 'block'
+        document.getElementsByClassName('navlist')[0].classList.add("mobile_show")
         document.getElementsByClassName('sanimg')[0].style.display = 'none'
         document.getElementsByClassName('sanimg')[1].style.display = 'block'
         window.scrollTo({
@@ -10,7 +10,7 @@ function navspread(n) {
         });
 
     } else {
-        document.getElementsByClassName('navlist')[0].style.display = 'none'
+        document.getElementsByClassName('navlist')[0].classList.remove("mobile_show")
         document.getElementsByClassName('sanimg')[0].style.display = 'block'
         document.getElementsByClassName('sanimg')[1].style.display = 'none'
     }
