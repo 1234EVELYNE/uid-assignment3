@@ -11,7 +11,7 @@
   <script src="../js/footer.js" defer></script>
   <script src="../js/public.js" defer></script>
   <link rel="stylesheet" href="../css/detail.css">
-  <script src="../js/detail.js" defer></script>
+  <script src="../js/detail2.js" defer></script>
 </head>
 
 <body>
@@ -114,7 +114,10 @@
   </div>
 <!-- mobile navigation with Click the “up” sign to expand the menu -->
 </nav>
-<div class="navlist">
+<div class="navlist" id="mobile_nav">
+  <div id="navigation_search_item" class="navitem">
+    <span>Search</span>
+   </div>
   <div class="navitem">
     <span>Electronics in the Control Cabinet</span>
     <img onclick="up(0)" class="up" src="../photo/nav/up.png" alt="">
@@ -229,9 +232,9 @@
   <div class="detail">
     <div class="left">
       <!-- click button for change products detail images -->
-      <div class="button" onclick="slideshow(1)">←</div>
-      <img id="slideshowimg" src="../photo/productsList/image1.png" alt="">
-      <div class="button" onclick="slideshow(2)">→</div>
+      <div class="button" onclick="slideshow2(1)">←</div>
+      <img class="slideshowimg2" src="../photo/image6.jpg" alt="">
+      <div class="button" onclick="slideshow2(2)">→</div>
       
     </div>
     <div class="right">
@@ -333,7 +336,63 @@
   <footer>
     <p>&copy; 2024 Murrelektronik. All rights reserved.</p>
   </footer>
-
+  <!-- search bar for mobile-->
+  <div id="navigation_search" class="navigation-mobile">
+    <img id="navigation_search_close" src="../../Uid A3/uid3/photo/close.png" class="modal-close-icon" />
+    <h2>Search</h2>
+    <div class="navigation-search-input-wrapper">
+        <img src="../../Uid A3/uid3/photo/search.png">
+        <input placeholder="Search" />
+    </div>
+    <div class="recently-viewed">
+        <div class="recently-viewed-top">
+            <h4>Recently Viewed</h4>
+            <a href="#">Clear History</a>
+        </div>
+        <img src="../../Uid A3/uid3/photo/top category phase.png">
+    </div>
+    <div>
+        <h4>Try to search</h4>
+        <div class="try-to-search">
+            <div class="try-to-search-item">
+                <img src="../../Uid A3/uid3/photo/search.png">
+                <span>Switches</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="../../Uid A3/uid3/photo/search.png">
+                <span>Control Devices</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="../../Uid A3/uid3/photo/search.png">
+                <span>Tool</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="../../Uid A3/uid3/photo/search.png">
+                <span>Transformers</span>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
+<script>
+  // document.getElementById("menu").addEventListener("click", function() {
+  //   document.getElementById("navigation_mobile").style.display = "block";
+  // })
+
+  // document.getElementById("navigation_mobile_close").addEventListener("click", function() {
+  //   document.getElementById("navigation_mobile").style.display = "none";
+  // })
+
+  document.getElementById("navigation_search_item").addEventListener("click", function() {
+    document.getElementById("navigation_search").style.display = "block";
+  })
+
+  document.getElementById("navigation_search_close").addEventListener("click", function() {
+    document.getElementById("navigation_search").style.display = "none";
+  })
+
+</script>
+
+
 
 </html>

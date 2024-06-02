@@ -83,12 +83,13 @@ a{
 }
 /* Alternate colors for each section by using odd ad even number of part */
 .flow-list:nth-child(even){
-    background-color: #ffffff;
+    background-color:#EBEFEA;
+    
     padding: 80px;
 }
 
 .flow-list:nth-child(odd){
-    background-color:#EBEFEA;;
+    background-color: #F5F5F5;
     padding: 80px;
 }
 
