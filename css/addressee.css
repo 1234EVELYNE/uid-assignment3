@@ -1,0 +1,145 @@
+.content {
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+
+/* The step process for check out */
+.step-progress span {
+    font-size: 16px;
+}
+
+/* completed steps turn green */
+.step-progress span:first-child{
+    color: #008a00;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.addressee {
+    width: 350px;
+    box-sizing: border-box;
+    /* border: 1px solid #1D1F1D; */
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.title1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* login style */
+.title1 a{
+    color: #008a00;
+}
+.title2{
+    width: 100%;
+    h2 {
+        margin: 0;
+    }
+}
+.inputs input {
+    border: 1px solid #008a00;
+    height: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.email {
+    width: 100%;
+}
+
+
+/* form style */
+.shipping-name, .CPP {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   width: 350px;
+}
+
+
+
+.name {
+    width: 48%;
+}
+
+.second-name {
+    width: 50%;
+
+}
+
+.address {
+    width: 100%;
+
+}
+
+.shipping {
+    width: 100%;
+
+}
+
+.city {
+    width: 32%;
+
+}
+
+.postal {
+    width: 32%;
+
+}
+
+.suburb {
+    width: 32%;
+
+}
+.suburb,.state,.email{
+    border: 1px solid #008a00;
+    height: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+.state {
+    width: 100%;
+
+}
+
+
+/* save info */
+.save{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 30px 0;
+    font-size: 14px;
+}
+
+/* back to cart style */
+h4{
+    margin-top: 20PX;
+    color: #008a00;
+    text-decoration: underline;
+}
+
+/* continue to payment button */
+.continue{
+    width: 320px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #008a00;
+    border-radius: 30px;
+    font-size: 26px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none
+    
+}

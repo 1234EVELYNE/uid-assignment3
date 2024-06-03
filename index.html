@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homepage</title>
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./Uid A3/uid3/homepage2.css">
+  <script src="./js/nav.js" defer></script>
+  <script src="./js/footer.js" defer></script>
+  <script src="./js/public.js" defer></script>
+  <script src="./js/login.js" defer></script>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./js/index.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <!--navgation bar-->
+    <nav class="navbar">
+      <!-- Default mobile screen display -->
+      <div class="smallScreen">
+        <div class="m-logo">
+          <a href="./index.html"><img src="./photo/nav/pc-logo.png" alt=""></a>
+
+        </div>
+        <div class="button ">
+          <div class="san shoppingcart">
+            <a href="./shoppingcart.html"><img src="./photo/nav/shoppingcart.png" alt=""></a>
+
+          </div>
+        </div>
+        <div class="san navspread">
+          <img class="sanimg" onclick="navspread(1)" src="./photo/nav/san.png" alt="">
+          <img class="sanimg " style="display: none;" onclick="navspread(2)" src="./photo/nav/error.png" alt="">
+        </div>
+      </div>
+      <!-- default desktop screen display -->
+      <!-- Click the logo image in the navigation bar to jump back to the homepage -->
+      <div class="logo">
+        <a href="./index.html"><img src="./photo/nav/pc-logo.png" alt="Murrelektronik Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <!-- the main categoies -->
+        <li class="nav-item">
+          <a href="#">Electronics In The Control Cabinet</a>
+          <!-- dropdown submenu for sub-categories -->
+          <div class="dropdown-content">
+            <a href="#">Intelligent Power Distribution</a>
+            <a href="#">Power Supply DC</a>
+            <a href="#">EMC Suppressors</a>
+            <a href="#">Transformers</a>
+            <a href="#">UPS-Systems / Buffer- / Redundancy Modules</a>
+            <a href="#">Converters / Rectifiers</a>
+            <a href="#">Optocouplers / Semiconductors</a>
+            <a href="#">Active Interface Technology</a>
+            <a href="#">Passive Interface Technology</a>
+            <a href="#">Eurocard Holders / Control Modules</a>
+            <a href="#">Control Cabinet Power Outlets</a>
+            <a href="#">EMC Filters</a>
+            <a href="#">Safety relay</a>
+            <a href="#">Relay Modules</a>
+            <a href="#">Switches</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#">Interfaces</a>
+          <div class="dropdown-content">
+            <a href="#">Front Panel Interfaces</a>
+            <a href="#">Control Cabinet Interfaces</a>
+            <a href="#">Pass-through</a>
+            <a href="#">Lighting Elements</a>
+            <a href="#">Control Devices</a>
+            <a href="#">Modular Connection Systems (Modlink Vario)</a>
+            <a href="#">Heavy Duty Connectors (Modlink Heavy)</a>
+            <a href="#">Cable entry systems</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#">Connection Technology</a>
+          <div class="dropdown-content">
+            <a href="#">With open ended wires</a>
+            <a href="#">Connection cables</a>
+            <a href="#">Y connector</a>
+            <a href="#">Valve Connectors</a>
+            <a href="#">Field-wireable</a>
+            <a href="#">T-coupler</a>
+            <a href="#">Flange Connectors</a>
+            <a href="#">Bulk cable</a>
+            <a href="#">Adapter</a>
+            <a href="#">Tool</a>
+            <a href="#">Accessories</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="#">I/O-Systems</a>
+          <div class="dropdown-content">
+            <a href="#">Cube67</a>
+            <a href="#">cube20</a>
+            <a href="#">cube20s</a>
+            <a href="#">xtremeDB</a>
+            <a href="#">IO-link devices</a>
+           
+          </div>
+        </li>
+      </ul>
+      <!-- the three icons of navigation bar with function  -->
+      <div class="nav-icons">
+        <a href="./login.html" class="icon-link"><img src="./photo/nav/user.png" alt="user"></a>
+        <a href="./shoppingcart.html" class="icon-link"><img src="./photo/nav/shoppingcart.png" alt="Cart"> <span
+            class="cart-count">2</span></a><!-- shopping cart with count for amount of products -->
+        <a href="#" class="icon-link" onclick="searchbutton()"><img src="./photo/nav/search.png" alt="search bar"></a>
+
+      </div>
+    <!-- mobile navigation with Click the “up” sign to expand the menu -->
+    </nav>
+    <div class="navlist" id="mobile_nav">
+      <div id="navigation_search_item" class="navitem">
+            <span>Search</span>
+        </div>
+      <div class="navitem">
+        <span>Electronics in the Control Cabinet</span>
+        <img onclick="up(0)" class="up" src="./photo/nav/up.png" alt="">
+      </div>
+      <div class="navitemlist">
+        <p>Intelligent Power Distribution</p>
+        <p> Power Supply DC</p>
+        <p>EMC Suppressors</p>
+        <p>Transformers</p>
+        <p>UPS-Systems /Buffer-/Redundancy Modules</p>
+        <p>Converters /Rectifiers</p>
+        <p>Optocouplers / Semiconductors</p>
+        <p>Active Interface Technology</p>
+        <p>Passive Interface Technology</p>
+        <p>Eurocard Holders / Control Modules</p>
+        <p>Control Cabinet Power Outlets</p>
+        <p>EMC Filters</p>
+        <p>Safety relay</p>
+        <p>Relay Modules</p>
+        <p>Switches</p>
+      </div>
+      <div class="navitem">
+        <span>Interfaces</span>
+        <img onclick="up(1)" class="up" src="./photo/nav/up.png" alt="">
+      </div>
+      <div class="navitemlist">
+        <p>Front Panel Interfaces</p>
+        <p>Control Cabinet Interfaces</p>
+        <p>Pass-through</p>
+        <p>Lighting Elements</p>
+        <p>Control Devices</p>
+        <p>Modular Connection Systems (Modlink Vario)</p>
+        <p>Heavy Duty Connectors (Modlink Heavy)</p>
+        <p>Cable entry systems</p>
+        
+      </div>
+      <div class="navitem">
+        <span>Connection Technology</span>
+        <img onclick="up(2)" class="up" src="./photo/nav/up.png" alt="">
+      </div>
+      <div class="navitemlist">
+        <p>With open ended wires</p>
+        <p>Connection cables</p>
+        <p>Y connector</p>
+        <p>Valve Connectors</p>
+        <p>Field-wireable</p>
+        <p>Flange Connectors</p>
+        <p>T-coupler</p>
+        <p>Bulk cable</p>
+        <p>Adapter</p>
+        <p>Tool</p>
+        <p>Accessories</p>
+        
+      </div>
+      <div class="navitem">
+        <span>I/O-Systems</span>
+        <img onclick="up(3)" class="up" src="./photo/nav/up.png" alt="">
+      </div>
+      <div class="navitemlist">
+        <p>Cube67</p>
+        <p>cube20</p>
+        <p>cube20s</p>
+        <p>xtremeDB</p>
+        <p>IO-link devices</p>
+        <p>Converters /Rectifiers</p>
+      </div>
+    </div>
+    <!-- Click to show/close hidden search bar and search function-->
+    <div class="searcharea">
+      <div class="searchnav">
+        <img class="img1" onclick="jumpto('homepage')" src="./photo/nav/pc-logo.png" onclick="jumpto('homepage')" alt="">
+        <img class="img3" onclick="filter()" src="./photo/nav/search.png" alt="">
+        <input class="searchinput" type="text" placeholder="SEARCH">
+        <!-- close the search bar -->
+        <img class="img2" onclick="errorbutton()" src="./photo/nav/error.png" alt="">
+      </div>
+      <div class="result">
+        <div class="Viewed">
+          <span class="Recently">Recently Viewed</span>
+          <span class="History">Clear History</span>
+        </div>
+        <!-- click first product jump to product detail -->
+        <div class="result-item" onclick="jumpto('detail')">
+          <img src="./photo/shoppingcart/proudct1.png" alt="">
+          <p class="title">MTS 1-PHASE SAFETY TRANSFORMER
+          </p>
+        </div>
+        <!-- list of recommendation with search images -->
+        <div class="tryto">
+          <p class="trytotitle">Try to search</p>
+          <div class="item">
+            <img src="./photo/nav/放大镜.png" alt="">
+            <span>Switches</span>
+          </div>
+          <div class="item">
+            <img src="./photo/nav/放大镜.png" alt="">
+            <span>Control Devices</span>
+          </div>
+          <div class="item">
+            <img src="./photo/nav/放大镜.png" alt="">
+            <span>Tool</span>
+          </div>
+          <div class="item">
+            <img src="./photo/nav/放大镜.png" alt="">
+            <span>Transformers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- main body of the homepage -->
+  </header>
+  <!-- the top big significant picture of homepage with jump to productlist -->
+  <a href="./productsList.html">
+    <div class="bigimg">
+      <img class="mybigimg" src="./photo/index/banner.png" alt="">
+      <!-- main text on the big image -->
+      <div class="bigtext">
+        <p>We Build Your </p>
+        <p>Dreams</p>
+      </div>
+      <div class="productlistbutton">
+        <div class="button">></div>
+        <p class="see-products"> See Projects</p>
+      </div>
+    </div>
+  </a>
+  <!--landing page-->
+  <div id="landing_page">
+    <div class="landing_photo">
+        <div class="landing_text">
+            <img src="./Uid A3/uid3/photo/Device_x2C__Hardware_x2C__Technology.png" alt="photo/Device_x2C__Hardware_x2C__Technology" class="photo_device">
+            <div>Electronics in the control cabinet</div>
+        </div>
+        <div class="landing_text">
+            <img src="./Uid A3/uid3/photo/,_Monitor, Screen.png" alt="photo/Device_x2C__Hardware_x2C__Technology" class="photo_Monitor">
+            <div>Interfaces</div>
+        </div>
+        <div class="landing_text">
+            <img src="./Uid A3/uid3/photo/frame grid.png" alt="photo/Device_x2C__Hardware_x2C__Technology" class="photo_frame">
+            <div>Connection technology </div>
+        </div>
+        <div class="landing_text">
+            <img src="./Uid A3/uid3/photo/,_Electricity-25.png" alt="photo/Device_x2C__Hardware_x2C__Technology" class="photo_Electricity">
+            <div>I/o systems</div>
+        </div>
+    </div>
+  </div>
+  <div class="flow-list">
+    <!-- <p ><span></span></p> -->
+    <h1 class="your-benefits">Your Benefit</h1>
+     <!--adver1-->
+ <div class="content">
+      <img src="./photo/index/flow1.png" alt="">
+      <div class="text txt-ml2">
+          <ul class="news_guide m">
+              <li>Real Time Pricing and Product Availability</li>
+              <li>Access Data Sheets Quickly</li>
+              <li>Create Project Lists</li>    
+              <li>Share Your Cart with Others</li>
+          </ul>
+        <a href="./login.html" class="Log-in">
+          <button class="log_in_button">Log In</button>
+        </a>
+      </div>
+    </div>
+      </div>
+  <!--adver2-->
+  <div class="flow-list">
+    <h1 class="yours-benefits">Direct ordering</h1>
+    <div class="content ct-ml">
+      <img src="./photo/index/flow2.png" alt="">
+      <div class="text txt-ml">
+        <ul class="news_guide">
+          <li>Order with only a few clicks - automatically fill your<br>cart and safe time</li>
+          <li>Do you know which article numbers you want to<br>order or do you have a product list in CSV format?</li>
+          <li>Then you can save time by using our direct order<br>option</li>
+        </ul>
+        <a class="ml" href="./shoppingcart.html">
+          <button class="log-in-button">MORE</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  <!--product showing page-->
+  <div class="Category">
+    <h1 class="Category-title">Top Category</h1>
+    <div class="content">
+      <div class="above_photo">
+        <img src="./Uid A3/uid3/photo/Top category supply 1.png" alt="Eco-Rail">
+        <img src="./Uid A3/uid3/photo/M12 Top category.png" alt="M12 male 0">
+        <img src="./Uid A3/uid3/photo/top category_photo 1.png" alt="data_insert">
+        <img src="./Uid A3/uid3/photo/top category phase.png"  onclick="jumpto('product2')"  alt="phase_control">
+      </div>
+    </div>
+  </div>
+  <div class="Category">
+    <h1 class="Category-title">Best seller</h1>
+    <div class="content">
+      <div class="below_photo">
+        <img src="./Uid A3/uid3/photo/Top category supply 2.png" alt="power supply67" class="power supply67">
+        <img src="./Uid A3/uid3/photo/Group 61.png"alt="Metal cube67">
+        <img src="./Uid A3/uid3/photo/Top category supply 3.png" alt="connectors">
+        <img src="./Uid A3/uid3/photo/Group 9.png" alt="wires">
+      </div>
+    </div>
+  </div>
+  
+  <!--advertisement-->
+
+  <div class="flow-list">
+    <div class="content">
+      <p class="main-title">A high-performance all-rounder </p>
+        <img class="main-img" src="./photo/index/flow3.png" alt="">
+
+      <div class="text">
+        <p class="large-text main-title2">A high-performance all-rounder </p>
+        <p style="font-size: 18px; line-height: 2;">The Vario-X Controller from Murrelektronik is a robust and reliable industrial PC for challenging production and manufacturing applications.</p>
+        <p style="margin-bottom: 60px; font-size: 18px; line-height: 2;">Create Project Lists</p>
+        <div class="button">MORE</div>
+      </div>
+    </div>
+  </div>
+  <div class="flow-list">
+    <div class="content">
+      <p class="main-title">Achieve More Together </p>
+      <img class="main-img" src="./photo/index/flow4.png" alt="">
+      <div class="text">
+          <p class="large-text main-title2">Achieve More Together </p>
+          <p class="achieve_litext">Murrelektronik becomes 60th member of Single Pair Ethernet<br> System Alliance</p>
+          <p class="introduce-text">The Vario-X Controller from Murrelektronik is a robust and<br>reliable industrial PC for challenging production and<br> manufacturing applications.</p>
+        <div class="button">MORE</div>
+      </div>
+    </div>
+  </div>
+  <div class="flow-list">
+    <div class="content">
+      <p class="main-title">Ihre Vorteile im Murrelektronik Onlineshop</p>
+      <img class="main-img" src="./photo/index/flow5.png" alt="">
+      <div class="text">
+        <p class="large-text main-title2">Ihre Vorteile im Murrelektronik Onlineshop</p>
+        <p class="Ihre_text" style="margin-bottom: 60px;">The Vario-X Controller from Murrelektronik is a robust and reliable industrial PC for challenging production and manufacturing applications.</p>
+        <div class="button">MORE</div>
+      </div>
+    </div>
+  </div>
+  <div class="Category2">
+    <h1 class="Discover">Discover Our Electronics</h1>
+    <div class="content">
+      <div class="Discover-photo">
+        <img src="./Uid A3/uid3/photo/arrival.png"  onclick="jumpto('detail')"  alt="power supply67">
+        <img src="./Uid A3/uid3/photo/arrvial_img2.png"alt="Metal cube67">
+        <img src="./Uid A3/uid3/photo/arrvial_img3.png" alt="connectors">
+        <img src="./Uid A3/uid3/photo/arrvial_img4.png" alt="wires">
+      </div>
+    </div>
+  </div>
+  <!-- footer for whole website-->
+  <div class="footer">
+    <div class="list">
+      <p class="title"><span>Poducts & Categories</span><img onclick="up1(0)" src="./photo/index/up.png" alt=""></p>
+      <ul class="list-ul">
+        <li>Electronics in the Control Cabinet</li>
+        <li>Interfaces</li>
+        <li>Connection Technology</li>
+        <li>I/O-Systems</li>
+      </ul>
+    </div>
+    <div class="list">
+      <div class="title"><span>Shop online safely!</span><img onclick="up1(1)" src="./photo/index/up.png" alt="">
+      </div>
+      <ul class="list-ul">
+        <li>Privacy Policy</li>
+        <li>Terms and Conditions</li>
+      </ul>
+    </div>
+    <div class="list">
+      <div class="title"><span>About Murrelektronik</span><img onclick="up1(2)" src="./photo/index/up.png" alt="">
+      </div>
+      <ul class="list-ul">
+        <li>Company Website</li>
+        <li>Dictionary</li>
+        <li>Imprint</li>
+        <li>Services & FAQs</li>
+      </ul>
+    </div>
+    <div class="list">
+      <div class="title"><span>Your Benefits</span><img onclick="up1(3)" src="./photo/index/up.png" alt="">
+      </div>
+      <ul class="list-ul">
+        <li>Real Time Pricing and Product</li>
+        <li>Availablity</li>
+        <li>Access Data Sheets Quickly</li>
+        <li>Create Project Lists</li>
+        <li>Share Your Cart with Others</li>
+      </ul>
+    </div>
+    <div class="list">
+      <div class="title"><span>Always in the know</span><img onclick="up1(4)" src="./photo/index/up.png" alt="">
+      </div>
+      <ul class="list-ul">
+        <li>The newsletter with product updates,</li>
+        <li>the latest topics...</li>
+        <li> Register now</li>
+      </ul>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Murrelektronik. All rights reserved.</p>
+  </footer>
+  <!--search bar for mobile!-->
+  <div id="navigation_search" class="navigation-mobile">
+    <img id="navigation_search_close" src="./Uid A3/uid3/photo/close.png" class="modal-close-icon" />
+    <h2>Search</h2>
+    <div class="navigation-search-input-wrapper">
+        <img src="./Uid A3/uid3/photo/search.png">
+        <input placeholder="Search" />
+    </div>
+    <div class="recently-viewed">
+        <div class="recently-viewed-top">
+            <h4>Recently Viewed</h4>
+            <a href="#">Clear History</a>
+        </div>
+        <img src="./Uid A3/uid3/photo/top category phase.png">
+    </div>
+    <div>
+        <h4>Try to search</h4>
+        <div class="try-to-search">
+            <div class="try-to-search-item">
+                <img src="./Uid A3/uid3/photo/search.png">
+                <span>Switches</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="./Uid A3/uid3/photo/search.png">
+                <span>Control Devices</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="./Uid A3/uid3/photo/search.png">
+                <span>Tool</span>
+            </div>
+            <div class="try-to-search-item">
+                <img src="./Uid A3/uid3/photo/search.png">
+                <span>Transformers</span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+  // document.getElementById("menu").addEventListener("click", function() {
+  //   document.getElementById("navigation_mobile").style.display = "block";
+  // })
+
+  // document.getElementById("navigation_mobile_close").addEventListener("click", function() {
+  //   document.getElementById("navigation_mobile").style.display = "none";
+  // })
+
+  document.getElementById("navigation_search_item").addEventListener("click", function() {
+    document.getElementById("navigation_search").style.display = "block";
+  })
+
+  document.getElementById("navigation_search_close").addEventListener("click", function() {
+    document.getElementById("navigation_search").style.display = "none";
+  })
+
+</script>
+</html>

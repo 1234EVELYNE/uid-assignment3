@@ -1,0 +1,60 @@
+.content {
+    padding: 5%;
+    box-sizing: border-box;
+}
+
+.step-progress span {
+    font-size: 16px;
+    color: #008a00;
+}
+
+.step-progress span:last-child{
+    text-decoration: underline;
+    color:#1d1f1d;
+}
+
+.payment-result {
+    width: 350px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.payment-result img{
+    height: 100px;
+    margin: 30px;
+}
+.payment-result p{
+    color: #008a00;
+    width: 60%;
+    text-align: center;
+}
+.payment-result span{
+    color: #656565;
+    font-size: 12px;
+}
+
+/* print receipt style */
+h4{
+    color: #008a00;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+
+/* continue shopping button style */
+.continue {
+    width: 320px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #008a00;
+    border-radius: 30px;
+    font-size: 26px;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-decoration: none
+}
